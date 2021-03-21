@@ -1,0 +1,95 @@
+
+.phmain
+{
+    width:100%;
+    margin: auto;
+    padding-left:28%;
+}
+
+
+
+.phrow {
+margin: 8px 10px;
+
+
+}
+
+/* Add padding BETWEEN each column */
+.phrow,
+.phrow > .phcolumn {
+padding: 0px;
+
+
+}
+
+/* Create four equal columns that floats next to each other */
+.phcolumn {
+float: left;
+width:23%;
+height:60px;
+}
+
+/* Clear floats after rows */ 
+.phrow:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Content */
+.phcontent {
+
+padding: 10px;
+
+} 
+
+.product-a {
+    text-decoration: none;
+    border-color: #2196F3;
+    color: dodgerblue;
+    /*background-color: white;*/
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 30%;
+    border: solid;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.product-a:hover {
+    border-radius: 20px 20px 20px 20px;
+    background: #2196F3;
+    color: white;
+    opacity: 0.8;
+}
+
+.product-item-div {
+    width: 60%;
+    height: 30px;
+    background-color: rgb(101, 206, 171);
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin-left: 20%;
+}
+
+
+@media screen and (max-width:1000px) {
+  .phmain{padding-left:20%;}
+    .phcolumn {
+      width:47%;
+    }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:500px) {
+    .phmain{padding-left:0%;}
+    .row {
+        margin: 8px -9px;
+        
+      }
+    .phcolumn {
+      width:98%;
+    }
+}

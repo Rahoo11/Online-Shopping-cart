@@ -1,0 +1,150 @@
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0%
+  }
+  
+  /* Center website */
+  .main {
+    width:100%;
+    margin: auto;
+  }
+  
+  
+  
+  .row {
+    margin: 8px 10px;
+    
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+    
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width:23%;
+    
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #37444f;
+    padding: 10px;
+    height:490px;
+  }
+  .content:hover {
+    background-color:#dfe7e8;
+    
+    
+  }
+  .ptitle
+  {
+    font-size:1.1em;
+    color:black;
+  }
+  .image
+  {
+    width:100%;
+    height:280px;
+  }
+  .price
+  {
+    text-decoration:none;
+    float:left;
+    font-size:20px;
+    padding: 6px;
+    color:black;
+  }
+  .size
+  {
+    text-decoration:none;
+    float:right;
+    padding: 6px;
+    color:black;
+    font-size:20px;
+  }
+  .wishlistbtn
+  {
+    text-decoration:none;
+    float:left;
+    font-size:18px;
+    padding: 6px;
+    color:white;
+    background-color:black;
+    border-radius:5px 5px 5px 5px;
+  }
+  .viewdetailbtn
+  {
+    font-size:18px;
+    text-decoration:none;
+    float:right;
+    padding: 5px;
+    color:white;
+    background-color:black;
+    border-radius:5px 5px 5px 5px;
+  }
+  .editprodbtn
+  {
+    text-decoration:none;
+    float:left;
+    font-size:18px;
+    padding: 6px;
+    color:white;
+    background-color:black;
+    border-radius:5px 5px 5px 5px;
+  }
+  .deleteprodbtn
+  {
+    text-align:center;
+    text-decoration:none;
+    float:right;
+    font-size:18px;
+    padding: 6px;
+    border:solid;
+    border-color:red;
+    color:red;
+    background-color:white;
+    border-radius:5px 5px 5px 5px;
+  }
+  .deleteprodbtn:hover
+  {
+    color:white;
+    background-color:#e60e23;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width:1000px) {
+   
+    .column {
+      width:47%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:500px) {
+    .row {
+        margin: 8px -9px;
+        
+      }
+    .column {
+      width:95%;
+    }
+  }
+  
+</style>
